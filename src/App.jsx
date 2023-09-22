@@ -3,9 +3,9 @@ import "./reset.min.css"
 import "./style.css"
 
 export const App = () => {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(1);
   const finalText = "We Love Programming!";
-  const [text, setText] = useState(" ");
+  const [text, setText] = useState("W");
   const [value, setvalue] = useState(1)
   const [intervalSpeed, setIntervalSpeed] = useState(300)
   const handleChange = (e)=> {
