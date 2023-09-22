@@ -28,22 +28,22 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.counter input {
+.counter select {
     min-height: 30px;
     max-width: 50px;
-    margin-left: 1rem;
+    
     background-color: darksalmon;
     border: none;
     padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 16px;
+    text-align: center;
+    outline: none;
     
 }
 
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.counter select option {
+    text-align: center;
 }
+
 
