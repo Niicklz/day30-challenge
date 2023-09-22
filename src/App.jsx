@@ -9,10 +9,14 @@ export const App = () => {
   const [value, setvalue] = useState(1)
   const [intervalSpeed, setIntervalSpeed] = useState(300)
   const handleChange = (e)=> {
-    setvalue(e.target.value)
-    setIntervalSpeed( 300 / e.target.value)
-    console.log(value);
 
+    if(e.target.value >= 1 && e.target.value <= 10) {
+      setvalue(e.target.value)
+      setIntervalSpeed( 300 / e.target.value)
+      console.log(value);
+  
+    }
+ 
 }
 
 
