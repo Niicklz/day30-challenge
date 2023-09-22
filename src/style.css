@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: darksalmon;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+
+}
+
+.container h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.counter {
+    position: absolute;
+    bottom: 60px;
+    padding: .5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.counter input {
+    min-height: 30px;
+    max-width: 50px;
+    margin-left: 1rem;
+    background-color: darksalmon;
+    border: none;
+    padding-left: 1rem;
+    font-size: 16px;
+    
+}
+
+
+
+input[type="number"] {
+    -webkit-inner-spin-button: none;
+    -webkit-outer-spin-button: none;
+    -moz-inner-spin-button: none;
+    -o-inner-spin-button: none;
+  }
