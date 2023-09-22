@@ -5,7 +5,7 @@ import "./style.css"
 export const App = () => {
   const [index, setIndex] = useState(0);
   const finalText = "We Love Programming!";
-  const [text, setText] = useState("");
+  const [text, setText] = useState(" ");
   const [value, setvalue] = useState(1)
   const [intervalSpeed, setIntervalSpeed] = useState(300)
   const handleChange = (e)=> {
@@ -36,7 +36,7 @@ export const App = () => {
 
   return (
     <div className="container">
-      <h1 style={{transition: "1s ease"}}> {text}</h1>
+      <h1 style={{transition: "1s ease"}} className="notranslate"> {text}</h1>
       <label htmlFor="" className="counter">
         <span>Speed:</span>
       <input type="number" min={1} max={10}  value={value}  onChange={handleChange} />
